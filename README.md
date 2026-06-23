@@ -72,6 +72,27 @@ Skills will be available only within that project.
 git submodule add https://github.com/melissa-pereira-deel/claude-code-server-side-swift-skills.git .claude/skills-external
 ```
 
+### Option 4: npx
+You can also use `npx` to install the skills, which is part of Node.js. If not laready installed you can use Howebrew to install it on macOS:
+
+```bash
+brew install node
+```
+
+On Ubuntu/Debian style Linux OSes you can use:
+
+```bash
+sudo apt install nodejs npm
+```
+
+As long as `npx -v` returns a version you can install both skills with:
+
+```bash
+npx skills add https://github.com/melissa-pereira-deel/claude-code-server-side-swift-skills
+```
+
+You will be asked which agents to install for and wether to install for the project, or globally.
+
 ## Usage Examples
 
 Once installed, just ask Claude Code naturally:
